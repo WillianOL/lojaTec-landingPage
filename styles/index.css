@@ -14,8 +14,7 @@
 /* Header */
 .header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: 0px 70px;
 }
 /* header - Logo */
@@ -51,10 +50,12 @@
 
 .itens p.principal{
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
+    transition: all .1s ease;
 }
 
 .itens p.principal:hover{
     background-color: var(--corContraste);
+    color: white;
 }
