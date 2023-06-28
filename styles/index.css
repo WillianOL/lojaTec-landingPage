@@ -1,6 +1,7 @@
 :root{
     --fontPrincipal: "Inter", monospace, sans-serif;
     --corPrincipal: #0d7bdb;
+    --corContraste: #010b40;
     --branco: #f2f2f2;
 }
 
@@ -28,7 +29,6 @@
 }
 /* header - lista de produtos */
 .lista-protudos-conteiner{
-    font-weight: 500;
     height: 70px;
 }
 
@@ -39,4 +39,22 @@
     list-style: none;
     gap: 5px;
     height: 100%;
+}
+
+.itens{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    height: 100%;
+}
+
+.itens p.principal{
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.itens p.principal:hover{
+    background-color: var(--corContraste);
 }
