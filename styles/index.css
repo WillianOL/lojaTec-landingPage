@@ -1,0 +1,17 @@
+:root{
+    --fontPrincipal: "Inter", monospace, sans-serif;
+    --corPrincipal: #0d7bdb;
+    --branco: #f2f2f2;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fontPrincipal);
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-around;
+}
