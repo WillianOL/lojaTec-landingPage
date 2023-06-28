@@ -11,7 +11,32 @@
     font-family: var(--fontPrincipal);
 }
 /* Header */
-header{
+.header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+/* header - Logo */
+.logo{
+   font-size: 1.5rem; 
+   font-weight: 600;
+}
+
+.logo span{
+    color: var(--corPrincipal);
+}
+/* header - lista de produtos */
+.lista-protudos-conteiner{
+    font-weight: 500;
+    height: 70px;
+}
+
+.lista-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 5px;
+    height: 100%;
 }
