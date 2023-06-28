@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
 }
 /* header-top - Logo */
 .logo{
@@ -60,4 +61,17 @@
     border-left: none;
     font-weight: 200;
     font-size: 2rem;
+}
+
+/* header-top - botões rapidos e login */
+.botoes-rapidos{
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.botoes-rapidos li{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
