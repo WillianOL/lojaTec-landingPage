@@ -95,3 +95,23 @@
 .botoes-rapidos li span{
     font-weight: 300;
 }
+
+/* Header - header-bottom */
+.lista-protudos-conteiner{
+    height: 50px;
+}
+
+.lista-protudos-conteiner, .itens, .lista-produtos{
+    display: flex;
+    align-items: center;
+}
+.lista-protudos-conteiner .lista-produtos{
+    list-style: none;
+    height: 100%;
+}
+
+.lista-produtos .itens{
+    height: 100%;
+    padding: 0px 10px;
+    cursor: pointer;
+}
