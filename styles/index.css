@@ -74,4 +74,24 @@
     display: flex;
     align-items: center;
     height: 100%;
+    cursor: pointer;
+    padding: 0px 5px;
+    transition: all .2s ease;
+}
+
+.botoes-rapidos li:hover{
+    background-color: rgb(241, 240, 240);
+}
+
+.botoes-rapidos li:hover span.setaIcon{
+    transform: rotate(-180deg);
+}
+
+.botoes-rapidos li span.setaIcon{
+    margin-left: 5px;
+    transition: all .2s ease;
+}
+
+.botoes-rapidos li span{
+    font-weight: 300;
 }
