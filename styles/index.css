@@ -2,7 +2,8 @@
     --fontPrincipal: "Inter", monospace, sans-serif;
     --corPrincipal: #0d7bdb;
     --corContraste: #010b40;
-    --branco: #f2f2f2;
+    --brancoHover: #f2f2f2;
+    
 }
 
 *{
@@ -80,7 +81,7 @@
 }
 
 .botoes-rapidos li:hover{
-    background-color: rgb(241, 240, 240);
+    background-color: var(--brancoHover);
 }
 
 .botoes-rapidos li:hover span.setaIcon{
@@ -114,4 +115,19 @@
     height: 100%;
     padding: 0px 10px;
     cursor: pointer;
+    border: 2px solid transparent;
+    transition: all .2s ease;
+}
+
+.lista-produtos .itens:hover{
+    background-color: var(--brancoHover);
+    border-bottom: 2px solid black;
+}
+
+.itens span.setaIcon{
+    transition: all .3s ease;
+}
+
+.lista-produtos .itens:hover span.setaIcon{
+    transform: rotate(-180deg);
 }
