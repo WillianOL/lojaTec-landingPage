@@ -121,10 +121,12 @@
 
 .lista-produtos .itens:hover{
     background-color: var(--brancoHover);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--corPrincipal);
 }
 
 .itens span.setaIcon{
+    margin-left: 2px;
+    font-weight: 300;
     transition: all .3s ease;
 }
 
