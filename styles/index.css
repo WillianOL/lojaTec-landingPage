@@ -115,6 +115,8 @@
     height: 100%;
     padding: 0px 10px;
     cursor: pointer;
+    border-left: none !important;
+    border-right: none !important;
     border: 2px solid transparent;
     transition: all .2s ease;
 }
@@ -132,4 +134,42 @@
 
 .lista-produtos .itens:hover span.setaIcon{
     transform: rotate(-180deg);
+}
+
+/* Banner - texto e imagens */
+.conteiner_principal{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner_site{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 40px;
+}
+
+.texto_banner {
+    width: 600px;
+}
+
+.texto_banner p{
+    font-size: 2.7rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.texto_banner p span{
+    color: var(--corPrincipal);
+    font-size: 2.7rem;
+}
+
+.texto_banner span{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.imagem_banner img{
+    width: 450px;
 }
