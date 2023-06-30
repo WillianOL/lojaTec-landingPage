@@ -3,7 +3,9 @@
     --corPrincipal: #0d7bdb;
     --corContraste: #010b40;
     --brancoHover: #f2f2f2;
-    
+    --corProdutos1: #b7a49d;
+    --corProdutos2: #8168a5;
+    --corProdutos3: #553730;
 }
 
 *{
@@ -235,7 +237,122 @@
 }
 
 .imagem_banner img{
-    width: 450px;
+    width: 420px;
     transform: rotate(10deg);
 }
 
+/* Produtos em destque */
+.produtos_destaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.produtos_destaque_conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens_produtos img{
+    width: 200px;
+    position: relative;
+    z-index: 1000;
+}
+
+.imagens_produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.produto .imagens_produtos{
+    background-color: var(--corProdutos1);
+    overflow: hidden;
+}
+
+.produto:nth-child(1) .imagens_produtos::before{
+    content: " ";
+    background-color: var(--corProdutos2);
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    top: -100px;
+    right: -70px;
+}
+
+.produto:nth-child(1) .imagens_produtos::after{
+    content: " ";
+    background-color: var(--corProdutos3);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    bottom: -100px;
+    left: -70px;
+}
+
+
+.produto p{
+    max-width: 450px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+
+.produto span{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.produto a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: var(--corPrincipal);
+    transition: background .2s ease;
+    border-radius: 2px;
+    padding: 10px 30px;
+}
+
+.produto a span{
+    font-size: 1.2rem;
+}
+
+.produto a:hover{
+    background-color: #0c5da3;
+    text-decoration: underline;
+}
+
+.produto:nth-child(2) .imagens_produtos{
+    background-image: url(../imgs/imagemQuartoPC.jpg);
+    background-position: center;
+    background-size: cover;
+}
