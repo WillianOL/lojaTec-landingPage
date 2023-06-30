@@ -146,6 +146,7 @@
 .banner_site{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 80px;
     padding-top: 40px;
@@ -167,12 +168,8 @@
 }
 
 .texto_banner span{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 300;
-}
-
-.imagem_banner img{
-    width: 450px;
 }
 
 .buttons{
@@ -196,4 +193,17 @@
 .buttons .btn_compra:nth-child(1){
     background-color: var(--corPrincipal);
     color: white;
+}
+
+.buttons .btn_compra:nth-child(1):hover{
+    background-color: #0c5da3;
+}
+
+.buttons .btn_compra:nth-child(2):hover{
+    background-color: #9ad0ff;
+}
+
+.imagem_banner img{
+    width: 450px;
+    transform: rotate(10deg);
 }
