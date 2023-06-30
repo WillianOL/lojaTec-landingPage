@@ -135,12 +135,43 @@
 .lista-produtos .itens:hover span.setaIcon{
     transform: rotate(-180deg);
 }
-
-/* Banner - texto e imagens */
-.conteiner_principal{
-    max-width: 1200px;
-    margin: 0 auto;
+/* Barra de icones */
+.barra_de_icones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+    border-top: 1px solid var(--brancoHover);
 }
+
+.icones, .icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.icone{
+    flex-direction: column;
+    width: 150px;
+    height: 120px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.icone img{
+    margin-bottom: 10px;
+    width: 40px;
+}
+
+.icone:hover{
+    background-color: var(--brancoHover);
+}
+
+.icone:hover span{
+    color: var(--corPrincipal);
+}
+
 
 /* Banner - Texto e botões */
 .banner_site{
@@ -207,3 +238,4 @@
     width: 450px;
     transform: rotate(10deg);
 }
+
