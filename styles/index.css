@@ -256,7 +256,7 @@
 
 .produtos_destaque_conteiner{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -285,36 +285,6 @@
     margin-bottom: 25px;
     position: relative;
 }
-
-.produto .imagens_produtos{
-    background-color: var(--corProdutos1);
-    overflow: hidden;
-}
-
-.produto:nth-child(1) .imagens_produtos::before{
-    content: " ";
-    background-color: var(--corProdutos2);
-    width: 270px;
-    height: 270px;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
-    top: -100px;
-    right: -70px;
-}
-
-.produto:nth-child(1) .imagens_produtos::after{
-    content: " ";
-    background-color: var(--corProdutos3);
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
-    bottom: -100px;
-    left: -70px;
-}
-
 
 .produto p{
     max-width: 450px;
@@ -351,8 +321,61 @@
     text-decoration: underline;
 }
 
+.produto .imagens_produtos{
+    background-color: var(--corProdutos1);
+    overflow: hidden;
+}
+
+.produto:nth-child(1) .imagens_produtos::before{
+    content: " ";
+    background-color: var(--corProdutos2);
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    top: -100px;
+    right: -70px;
+}
+
+.produto:nth-child(1) .imagens_produtos::after{
+    content: " ";
+    background-color: var(--corProdutos3);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    bottom: -100px;
+    left: -70px;
+}
+
 .produto:nth-child(2) .imagens_produtos{
     background-image: url(../imgs/imagemQuartoPC.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.produto:nth-child(3) .imagens_produtos::before{
+    content: " ";
+    background-color: var(--corProdutos3);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    bottom: 100px;
+    right: -50px;
+}
+
+.produto:nth-child(3) .imagens_produtos::after{
+    content: " ";
+    background-color: var(--corProdutos2);
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    bottom: -130px;
+    left: 10px;
 }
