@@ -148,6 +148,7 @@
 
 .icones, .icone{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -351,7 +352,7 @@
 }
 
 .produto:nth-child(2) .imagens_produtos{
-    background-image: url(../imgs/imagemQuartoPC.jpg);
+    background-image: url(../imgs/imagensProdutos/imagemQuartoPC.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -378,4 +379,10 @@
     z-index: 1;
     bottom: -130px;
     left: 10px;
+}
+
+.produto:nth-child(4) .imagens_produtos{
+    background: url(../imgs/imagensProdutos/imagemControles.jpg);
+    background-size: cover;
+    background-position: center;
 }
