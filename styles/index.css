@@ -79,6 +79,7 @@
     height: 100%;
     cursor: pointer;
     padding: 0px 5px;
+    position: relative;
     transition: all .2s ease;
 }
 
@@ -97,6 +98,101 @@
 
 .botoes-rapidos li span{
     font-weight: 300;
+}
+
+.botoes_sublista{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.166);
+    border-radius: 0px 0px 4px 4px;
+    flex-direction: column;
+    min-width: 300px;
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    padding: 20px;
+    background-color: white;
+    z-index: 10000;
+    transition: all .3s ease;
+    overflow-y: hidden;
+    animation: animaBotoesSublista .5s ease;
+}
+
+.botoes-rapidos li:hover .botoes_sublista{
+    display: flex;
+}
+
+@keyframes animaBotoesSublista{
+    from{
+        height: 0px;
+    }
+
+    to{
+        height: 280px;
+    }
+}
+
+.login .botoes_sublista h1{
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+
+.login .botoes_sublista p{
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #5a5a5a;
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+.login .botoes_sublista span{
+    font-size: 0.9rem;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    color: #5a5a5a;
+    font-weight: 500;
+    margin-left: 10px;
+    position: relative;
+}
+
+.login .botoes_sublista span::before{
+    position: absolute;
+    content: "";
+    background-color: #5a5a5a;
+    width: 6px;
+    height: 6px;
+    left: -10px;
+    top: 5px;
+    border-radius: 50%;
+}
+
+.login .botoes_sublista a{
+    text-decoration: none;
+    background-color: var(--corPrincipal);
+    color: white;
+    border-radius: 2px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    transition: all .1s ease;
+}
+
+.login .botoes_sublista a:hover{
+    background-color: #0c5da3;
+}
+
+.login .botoes_sublista a.criarConta{
+    background-color: transparent;
+    color: var(--corPrincipal);
+    border: 1px solid var(--corPrincipal);
+}
+
+.login .botoes_sublista a.criarConta:hover{
+    background-color: #9ad0ff;
 }
 
 /* Header - header-bottom */
@@ -141,7 +237,7 @@
 .lista-produtos .itens:hover .sublist{
     display: flex;
     animation: aparecerSublista .5s ease forwards;
-}  
+}
 
 .itens:nth-child(1) .sublist{
     width: 400px;
