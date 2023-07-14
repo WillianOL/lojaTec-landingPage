@@ -264,7 +264,7 @@
     background-color: white;
     top: 49px;
     left: -10px;
-    border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.216);
 }
 
@@ -322,7 +322,70 @@
 }
 
 /* Header bottom - celulares */
+.itens:nth-child(2) .sublist{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
 
+.produtos{
+    min-width: 170px;
+}
+
+.produtos .nomeProduto{
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.produtos .nomeProduto:hover{
+    font-weight: 600;
+}
+
+.img_produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 470px;
+    padding-left: 15px;
+    border-left: 1px solid rgba(187, 187, 187, 0.637);
+}
+
+.img_produtos span{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    position: relative;
+    transition: all .2s ease;
+}
+
+.img_produtos span:nth-child(1)::before,
+.img_produtos span:nth-child(2)::before{
+    content: "Novo!";
+    top: -5px;
+    left: -10px;
+    font-size: .8rem;
+    position: absolute;
+    background-color: #0d7bdb;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+}   
+
+.img_produtos span img{
+    width: 110px;
+}
+
+.img_produtos span:hover{
+    background-color: #d6d6d6;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.17);
+    transform: scale(1.01);
+}
 
 /* Barra de icones */
 .barra_de_icones{
