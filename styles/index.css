@@ -330,16 +330,33 @@
 }
 
 .produtos{
+    gap: 2px;
     min-width: 170px;
 }
 
 .produtos .nomeProduto{
     width: 100%;
-    padding: 10px 15px;
+    padding: 15px;
+    position: relative;
 }
 
 .produtos .nomeProduto:hover{
     font-weight: 600;
+}
+
+.produtos .nomeProduto::before{
+    content: "";
+    background-color: var(--corPrincipal);
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 0px;
+    bottom: 0px;
+    transition: all .3s ease;
+}
+
+.produtos .nomeProduto:hover::before{
+    width: 100%;
 }
 
 .img_produtos{
@@ -349,6 +366,7 @@
     justify-content: center;
     width: 470px;
     padding-left: 15px;
+    margin-left: 5px;
     border-left: 1px solid rgba(187, 187, 187, 0.637);
 }
 
