@@ -234,49 +234,8 @@
     padding: 0px 10px;
     cursor: pointer;
     position: relative;
-    border-left: none !important;
-    border-right: none !important;
     border: 2px solid transparent;
     transition: all .2s ease;
-} 
-
-.itens .sublist{
-    position: absolute;
-    display: none;  
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    top: 49px;
-    padding: 20px;
-    border-radius: 0px 0px 5px 5px;
-    background-color: white;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.166);
-    overflow: hidden;
-}
-
-.lista-produtos .itens:hover .sublist{
-    display: flex;
-    animation: aparecerSublista .5s ease forwards;
-}
-
-.itens:nth-child(1) .sublist{
-    width: 400px;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.itens:nth-child(1) .sublist img{
-    max-width: 90px;
-}
-
-@keyframes aparecerSublista{
-    from{
-        height: 0px;
-    }
-
-    to{
-        height: 400px;
-    }
 }
 
 .lista-produtos .itens:hover{
@@ -293,6 +252,78 @@
 .lista-produtos .itens:hover span.setaIcon{
     transform: rotate(-180deg);
 }
+
+.itens:hover .sublist{
+    display: flex;
+}
+
+.itens .sublist{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    top: 49px;
+    left: -10px;
+    border-radius: 0px 0px 2px 2px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.216);
+}
+
+/* header bottom - marcas */
+.sublist .marca{
+    display: flex;
+    width: 250px;
+    padding: 15px;
+}
+
+.sublist .marca p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sublist .marca p span{
+    font-size: 1.1rem;
+    transition: all .2s ease;
+}
+
+.sublist .marca:hover p span{
+    transform: rotate(180deg);
+}
+
+.sublist .marca:hover{
+    background-color: #dedede;
+    color: #0d7bdb;
+}
+
+.marca .marcas_produtos{
+    position: absolute;
+    border-left: 1px solid rgb(108, 108, 108);
+    display: none;
+    left: 250px;
+    top: 0px;
+    background-color: #e4e4e4;
+    height: 305px;
+    list-style: none;
+}
+
+.marca .marcas_produtos li{
+    padding: 15px 15px;
+    width: 200px;
+    color: black !important;
+}
+
+.marca .marcas_produtos li:hover{
+    background-color: #cdcdcd;
+    font-weight: 500;
+}
+
+.marca:hover .marcas_produtos{
+    display: block;
+}
+
+/* Header bottom - celulares */
+
+
 /* Barra de icones */
 .barra_de_icones{
     display: flex;
@@ -331,7 +362,6 @@
     color: var(--corPrincipal);
 }
 
-
 /* Banner - Texto e botões */
 .banner_site{
     display: flex;
@@ -347,18 +377,18 @@
 }
 
 .texto_banner p{
-    font-size: 2.7rem;
+    font-size: max(2rem, 2.8vw);
     font-weight: 300;
     margin-bottom: 10px;
 }
 
 .texto_banner p span{
     color: var(--corPrincipal);
-    font-size: 2.7rem;
+    font-size: max(2rem, 2.8vw);
 }
 
 .texto_banner span{
-    font-size: 1.3rem;
+    font-size: max(1.14rem, 1.4vw);
     font-weight: 300;
 }
 
