@@ -417,7 +417,21 @@
 }
 
 /* Header bottom - Monitores */
+.notebook_banner img{
+    transform: rotate(360deg) !important;
+    width: 55vw !important;
+}
 
+.banner_produto .texto_banner p, 
+.banner_produto .texto_banner p span{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.banner_produto .texto_banner span{
+    font-size: 1.2rem;
+    text-align: center;
+}
 
 /* Barra de icones */
 .barra_de_icones{
@@ -464,7 +478,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 80px;
-    padding-top: 40px;
+    padding: 40px 0px;
 }
 
 .texto_banner {
@@ -532,7 +546,7 @@
 }
 
 .titulo{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 50px;
 }
 
@@ -662,8 +676,61 @@
     left: 10px;
 }
 
-.produto:nth-child(4) .imagens_produtos{
-    background: url(../imgs/imagensProdutos/imagemControles.jpg);
-    background-size: cover;
-    background-position: center;
+/* Banner produtos */
+.banner_produto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 150px 0px 70px;
+}
+
+.bannerImagem img{
+    width: 50vw;
+    z-index: 1000;
+    position: relative;
+}
+
+.bannerImagem{
+    position: relative;
+}
+
+.bannerImagem::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 26vw;
+    height: 26vw;
+    background-color: var(--corProdutos1);
+    top: -20px;
+    left: 50px;
+}
+
+.texto_do_produto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1000;
+}
+
+.texto_do_produto p{
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--corPrincipal);
+    margin-bottom: 5px;
+}
+
+.texto_do_produto span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner_celular .bannerImagem img{
+    width: 40vw;   
+}
+
+.banner_celular .bannerImagem::before{
+    content: none;
 }
