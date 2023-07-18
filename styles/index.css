@@ -761,3 +761,80 @@
 .banner_celular .imagem_do_produto img{
     width: 35vw;
 }
+
+/* Produtos recomendados */
+.recomendados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recomendados ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.recomendados ul img{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.recomendados ul li{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    padding: 25px 15px;
+    width: 250px;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.recomendados li h1{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.recomendados .cor{
+    margin-bottom: 100px;
+    font-size: .8rem;
+}
+
+.recomendados .cor span{
+    font-weight: 600;
+}
+
+.precos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.precos span{
+    font-size: .75rem;
+    color: var(--corPrincipal);
+    font-weight: 600;
+}
+
+.precos p{
+    font-size: 1.3rem;
+    font-weight: 600;   
+}
+
+.recomendados li a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--corPrincipal);
+    color: white;
+    font-size: .8rem;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
