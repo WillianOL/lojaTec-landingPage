@@ -779,13 +779,13 @@
 
 .recomendados ul img{
     width: 150px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.recomendados ul li{
+.recomendados ul .carProduto{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     flex-direction: column;
     background-color: #f3f3f3;
     padding: 25px 15px;
@@ -794,18 +794,21 @@
     height: 500px;
 }
 
-.recomendados li h1{
+.recomendados .carProduto h1{
     font-size: 1.2rem;
     margin-bottom: 25px;
 }
 
 .recomendados .cor{
-    margin-bottom: 100px;
     font-size: .8rem;
 }
 
 .recomendados .cor span{
     font-weight: 600;
+}
+
+.carProduto div:nth-child(1){
+    text-align: center;
 }
 
 .precos{
@@ -828,7 +831,7 @@
     font-weight: 600;   
 }
 
-.recomendados li a{
+.carProduto a{
     width: 100%;
     text-align: center;
     text-decoration: none;
