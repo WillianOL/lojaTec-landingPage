@@ -87,12 +87,13 @@
     background-color: var(--brancoHover);
 }
 
-.botoes-rapidos li:hover span.setaIcon{
+li:hover .setaIcon{
     transform: rotate(-180deg);
 }
 
-.botoes-rapidos li span.setaIcon{
+li .setaIcon{
     margin-left: 5px;
+    width: 1rem;
     transition: all .2s ease;
 }
 
@@ -870,4 +871,25 @@
 
 .carProduto a:hover{
     background-color: #0c5da3;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    background-color: #e8e8e8;
+    padding: 50px 20px;
+}
+footer section{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer section img{
+    width: 35px;
 }
