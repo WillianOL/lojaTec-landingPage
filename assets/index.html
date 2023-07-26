@@ -3,416 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecGalaxy</title>
+    <title>GalaxyTec</title>
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <section class="header-top">
+        <section class="header_top">
             <div class="logo">
-                <p><span>Galaxy</span>Tec</p>
+                <h1><span>Galaxy</span>Tec</h1>
             </div>
-            <div class="barra-de-pesquisa">
-                <input type="text" name="barraDePesquisa" id="barraDePesquisa" placeholder="Pesquisa GalaxyTec">
-                <label for="barraDePesquisa">
-                    <span class="material-symbols-outlined">search</span>
-                </label>
+            <div class="barra_de_pesquisa">
+                <input type="text" id="barraDePesquisa">
+                <label for="barraDePesquisa"><span class="material-symbols-outlined">search</span></label>
             </div>
-            <ul class="botoes-rapidos">
-                <li class="login">
-                    <span class="material-symbols-outlined">person</span>
-                    <p>Login</p>
-                    <img src="../imgs/icones/seta-icon.svg" alt="seta" class="setaIcon">
-                    <div class="botoes_sublista">
-                        <h1>Bem vindos a TecGalaxy!</h1>
-                        <p>Conta</p>
-                        <span>Faça seus pedidos de forma rapida.</span>
-                        <span>Armazene no carrinho o que gostou.</span>
-                        <span>Vizualize os status do produto.</span>
-                        <a href="#">Login</a>
-                        <a href="#" class="criarConta">Crie uma conta</a>
-                    </div>
-                </li>
-                <li class="suporte">
-                    <span class="material-symbols-outlined">support_agent</span>
-                    <p>Fale conosco</p>
-                </li>
-                <li class="carrinho">
-                    <span class="material-symbols-outlined">shopping_cart</span>
-                    <p>Carrinho</p>
-                    <img src="../imgs/icones/seta-icon.svg" alt="seta" class="setaIcon">
-                    <div class="botoes_sublista">
-                        <h1>Sem itens no carrinho</h1>
-                        <span>Faça login para acessar o carrinho</span>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section class="header-bottom">
-            <nav class="lista-protudos-conteiner">
-                <ul class="lista-produtos">
+            <div class="butoes_de_acesso">
+                <ul>
                     <li class="itens">
-                        <p class="principal">Marcas</p>
-                        <img src="../imgs/icones/seta-icon.svg" alt="seta" class="setaIcon">
-                        <ul class="sublist">
-                            <li class="marca">
-                                <p>Dell <span> > </span></p>
-                                <ul class="marcas_produtos">
-                                   <li>Monitores</li>
-                                   <li>Notebooks</li>
-                                   <li>Computadores</li>
-                                   <li>Acessórios</li>
-                                   <li>Teclados e mouses</li>
-                                   <li>Serviços</li> 
-                                </ul>
-                            </li>
-                            <li class="marca">
-                                <p>Lenovo<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>Monitores</li>
-                                    <li>Notebooks</li>
-                                    <li>Computadores</li>
-                                    <li>Acessórios</li> 
-                                </ul>
-                            </li>
-                            <li class="marca">
-                                <p>Apple<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>Celulares</li>
-                                    <li>Notebooks</li>
-                                    <li>Computadores</li>
-                                    <li>Acessórios</li> 
-                                </ul>
-                            </li>
-                            <li class="marca">
-                                <p>LG<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>Celulares</li>
-                                    <li>Notebooks</li>
-                                    <li>Monitores</li>
-                                    <li>Computadores</li>
-                                    <li>Acessórios</li> 
-                                </ul>
-                            </li>
-                            <li class="marca">
-                                <p>Motorola<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>Celulares</li>
-                                    <li>Notebooks</li>
-                                    <li>Computadores</li>
-                                    <li>Acessórios</li> 
-                                </ul>
-                            </li>
-                            <li class="marca">
-                                <p>Samsung<span> > </span></p> 
-                                <ul class="marcas_produtos">
-                                    <li>Celulares</li>
-                                    <li>Monitores</li>
-                                    <li>Notebooks</li>
-                                    <li>Computadores</li>
-                                    <li>Acessórios</li> 
-                                </ul> 
-                            </li>
-                        </ul>
+                        <span class="material-symbols-outlined">person</span>
+                        <p class="nome_item">Login</p>
+                        <img src="../imgs/icones/seta-icon.svg" class="setaIcon">
+                        <div class="login_e_carrinho">
+                            <h1>Bem vindo a GalaxyTec</h1>
+                            <p>Conta</p>
+                            <span>Faça seus pedidos de forma rápida.</span>
+                            <span>Armazene no carrinho o que gostou.</span>
+                            <span>Vizualize os status do produto.</span>
+                            <a href="#">Login</a>
+                            <a href="#">Inscreva-se</a>
+                        </div>
                     </li>
                     <li class="itens">
-                        <p class="principal">Celulares</p>
-                        <img src="../imgs/icones/seta-icon.svg" alt="seta" class="setaIcon">
-                        <ul class="sublist">
-                            <div class="produtos">
-                                <p class="nomeProduto">Iphone</p>
-                                <p class="nomeProduto">Sansung Galaxy</p>
-                                <p class="nomeProduto">Tablets</p>
-                                <p class="nomeProduto">Ipads</p>
-                                <p class="nomeProduto">Moto G</p>
-                                <p class="nomeProduto">Galaxy Tab</p>
-                                <p class="nomeProduto">Motorola</p>
-                            </div>
-                            <div class="img_produtos">
-                                <span class="conteiner_imagem">
-                                    <img src="../imgs/imagensProdutos/iphone.png" alt="Celular Iphone">
-                                </span>
-                                <span class="conteiner_imagem">
-                                    <img src="../imgs/imagensProdutos/Samsung.png" alt="Celular Samsung">
-                                </span>
-                                <span class="conteiner_imagem">
-                                    <img src="../imgs/imagensProdutos/Ipad.png" alt="Ipad">
-                                </span>
-                                <span class="conteiner_imagem">
-                                    <img src="../imgs/imagensProdutos/GalaxyTabS8.png" alt="Tablet Samsung">
-                                </span>
-                                <span class="conteiner_imagem">
-                                    <img src="../imgs/imagensProdutos/motoG53.png" alt="Celular motorola">
-                                </span>
-                                <span class="conteiner_imagem">
-                                    <img src="../imgs/imagensProdutos/iphone13.png" alt="Iphone 13">
-                                </span>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="itens">
-                        <p class="principal">Monitores e Periféricos</p>
-                        <img src="../imgs/icones/seta-icon.svg" alt="seta" class="setaIcon">
-                        <ul class="sublist">
-                            <li class="monitores">Monitores FullHD</li>
-                            <li class="monitores">Monitores HD</li>
-                            <li class="monitores">Monitores 4k</li>
-                            <li class="monitores">Monitores 120hz</li>
-                            <li class="monitores">Monitores Curvos</li>
-                            <li class="monitores">Monitores para Gamers</li>
-                            <li class="monitores">Custo Benificio</li>
-                        </ul>
-                    </li>
-                    <li class="itens">
-                        <p class="principal">Informática</p>
-                        <img src="../imgs/icones/seta-icon.svg" alt="seta" class="setaIcon">
-                        <ul class="sublist">
-                            <li class="marca">
-                                <p>Fontes<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>500w</li>
-                                    <li>600w</li>
-                                    <li>700w</li>
-                                    <li>900w</li>
-                                </ul> 
-                            </li>
-                            <li class="marca">
-                                <p>Mémorias ram<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>4g ram</li>
-                                    <li>8g ram</li>
-                                    <li>16g ram</li>
-                                    <li>32g ram</li>
-                                    <li>64g ram</li> 
-                                </ul> 
-                            </li>
-                            <li class="marca">
-                                <p>Gabinetes<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>Grandes</li>
-                                    <li>Compactos</li>
-                                    <li>Espelhados</li>
-                                    <li>Gamers</li>
-                                    <li>Minimalistas</li> 
-                                </ul> 
-                            </li>
-                            <li class="marca">Mouses</li>
-                            <li class="marca">
-                                <p>Teclados<span> > </span></p>
-                                <ul class="marcas_produtos">
-                                    <li>Mecânicos</li>
-                                    <li>Membrana</li>
-                                    <li>Grandes</li>
-                                    <li>Pequenos</li>
-                                    <li>Gamers</li> 
-                                </ul> 
-                            </li>
-                            <li class="marca">Placas Mãe</li>
-                            <li class="marca">Placas de video</li>
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <p class="nome_item">Carrinho</p>
+                        <img src="../imgs/icones/seta-icon.svg" class="setaIcon">
+                        <ul class="sublista">
+                            <h1>Sem itens no carrinho</h1>
+                            <p>Faça login para acessar o carrinho</p>
                         </ul>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </section>
+        <section class="header_bottom"></section>
     </header>
-
-    <main class="conteiner_principal">
-        <section class="barra_de_icones">
-            <ul class="icones">
-                <li class="icone">
-                    <img src="../imgs/icones/iphone.png" alt="Icone de celular">
-                    <span>Celulares</span>
-                </li>
-                <li class="icone">
-                    <img src="../imgs/icones/monitor.png" alt="Icone de monitor">
-                    <span>Monitores</span>
-                </li>
-                <li class="icone">
-                    <img src="../imgs/icones/notebook.png" alt="Icone de notebook">
-                    <span>Notebooks</span>
-                </li>
-                <li class="icone">
-                    <img src="../imgs/icones/pc.png" alt="Icone de PC">
-                    <span>Computadores</span>
-                </li>
-                <li class="icone">
-                    <img src="../imgs/icones/fones-de-ouvido.png" alt="Icone de um fone">
-                    <span>Acessórios</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="banner_site">
-            <div class="texto_banner">
-                <p><span>Fones De Ouvido</span> Imperdiveis, Qualidade Sonora</p>
-                <span>Escute o que quiser com a melhor qualidade sonora, com descontos imperdiveis.</span>
-                <div class="buttons">
-                    <a href="#" class="btn_compra">Comprar Agora</a>
-                    <a href="#" class="btn_compra">Ver Mais</a>
-                </div>
-            </div>
-            <div class="imagem_banner">
-                <img src="../imgs/fonesBanner/Fone1.png" alt="" class="foneImagem">
-            </div>
-        </section>
-
-        <section class="recomendados">
-            <ul>
-                <li class="carProduto">
-                    <div>
-                        <img src="../imgs/imagensProdutos/GalaxyWatch4.png" alt="Imagem do Galaxy Watch 4">
-                        <h1>Galaxy Wacth 4</h1>
-                        <p class="cor"><span>Cor:</span> Preto</p>
-                    </div>
-                    <div>
-                        <div class="precos">
-                            <span>Em até 10X</span>
-                            <p>R$1.018,00</p>
-                        </div>
-                        <a href="#">COMPRAR AGORA</a>
-                    </div>
-                </li>
-                <li class="carProduto">
-                    <div>
-                        <img src="../imgs/imagensProdutos/motoG53.png" alt="Imagem do moto G53">
-                        <h1>Moto G53</h1>
-                        <p class="cor"><span>Cor:</span> Preto</p>
-                    </div>
-                    <div class="conteinerCompra">
-                        <div class="precos">
-                            <span>Cupom de R$200,00 OFF</span>
-                            <p>R$1.208,00</p>
-                        </div>
-                        <a href="#">COMPRAR AGORA</a>
-                    </div>
-                </li>
-                <li class="carProduto">
-                    <div>
-                        <img src="../imgs/imagensProdutos/iphone13.png" alt="Iphone 13">
-                        <h1>Iphone 13 Pro</h1>
-                        <p class="cor"><span>Cor:</span> Azul</p>
-                    </div>
-                    <div class="conteinerCompra">
-                        <div class="precos">
-                            <span>Divida em até 7X</span>
-                            <p>R$5.408,00</p>
-                        </div>
-                        <a href="#">COMPRAR AGORA</a>
-                    </div>
-                </li>
-                <li class="carProduto">
-                    <div>
-                        <img src="../imgs/imagensProdutos/GalaxyTabS8.png" alt="Imagem do Galaxy Tab S8">
-                        <h1>Galaxy Tab S8</h1>
-                        <p class="cor"><span>Cor:</span> Preto</p>
-                    </div>
-                    <div class="conteinerCompra">
-                        <div class="precos">
-                            <span>Em até 10X</span>
-                            <p>R$7.570,67</p>
-                        </div>
-                        <a href="#">COMPRAR AGORA</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section class="produto_banner">
-            <div class="texto_produto">
-                <h1>Notebooks</h1>
-                <p>Garante a melhor experiência nos jogos</p>
-                <span>Lenovo Ideapad Gaming 3i</span>
-                <div class="buttons_produto">
-                    <a href="#" class="btn_compra">Comprar</a>
-                    <a href="#" class="btn_compra">Ver Mais</a>
-                </div>
-            </div>
-            <div class="imagem_do_produto">
-                <img src="../imgs/imagensProdutos/notebookImagem.png" alt="Notebook Lenovo Ideapad Gaming 3i">
-            </div>
-        </section>
-        <section class="produto_banner banner_celular">
-            <div class="texto_produto">
-                <h1>Celulares</h1>
-                <p>Para chamar a atenção em todos os lugares</p>
-                <span>Galaxy Z Flip3 5G</span>
-                <div class="buttons_produto">
-                    <a href="#" class="btn_compra">Comprar</a>
-                    <a href="#" class="btn_compra">Ver Mais</a>
-                </div>
-            </div>
-            <div class="imagem_do_produto">
-                <img src="../imgs/imagensProdutos/samsungCelularBanner.png" alt="">
-            </div>
-        </section>
-
-        <section class="produtos_destaque">
-            <ul class="produtos_destaque_conteiner">
-                <li class="produto">
-                    <div class="imagens_produtos">
-                        <img src="../imgs/imagensProdutos/GalaxyTabS8.png" alt="Imagem Galaxy Tab S8">
-                        <img src="../imgs/imagensProdutos/Samsung.png" alt="Imagem Samsung Galaxy S23 Ultra">
-                    </div>
-                    <p>Galaxy Tab S8 | Samsung Galaxy S23 Ultra com 15% OFF</p>
-                    <span>Ou divida em até 10x sem juros.</span>
-                    <a href="#">Ver Mais <span>↗</span></a>
-                </li>
-                <li class="produto">
-                    <div class="imagens_produtos"></div>
-                    <p>Monte seu PC com peças de alta qualidade e Preços Justo</p>
-                    <span>Descontos de até 20% OFF</span>
-                    <a href="#">Ver Mais <span>↗</span></a>
-                </li>
-                <li class="produto">
-                    <div class="imagens_produtos">
-                        <img src="../imgs/imagensProdutos/iphone.png" alt="Iphone">
-                        <img src="../imgs/imagensProdutos/Ipad.png" alt="Apple Wacth TCH">
-                    </div>
-                    <p>Iphone 14 Pro Max | Ipad Pro 11 com 5% OFF em descontos</p>
-                    <span>Frete grátis em compras acima de 200$</span>
-                    <a href="#">Ver Mais <span>↗</span></a>
-                </li>
-            </ul>
-        </section>
-    </main>
-    
-    <footer>
-        <section>
-            <article>
-                <div class="logo">
-                    <p><span>Galaxy</span>Tec</p>
-                </div>
-                <p>Entre em contato conosco!</p>
-                <div class="icones">
-                    <img src="../imgs/icones/instagramIcon.svg" alt="Icone do Instagram">
-                    <img src="../imgs/icones/whatsappIcon.svg" alt="Icone do Whatsapp">
-                </div>
-            </article>
-            <article>
-                <h1>Sobre</h1>
-                <nav>
-                    <a href="#">História</a>
-                    <a href="#">Suporte</a>
-                    <a href="#">Politica</a>
-                    <a href="#">Região</a>
-                </nav>
-            </article>
-            <article>
-                <h1>Suporte</h1>
-                <p>Inscreva-se</p>
-                <div>
-                    <input type="text">
-                    <button><img src="../imgs/icones/cartaIcon.svg" alt="icone de carta"></button>
-                </div>
-            </article>
-        </section>
-
-        <p>© 2023 todos os direitos reservados</p>
-    </footer>
-    
-    <script src="index.js"></script>
 </body>
 </html>
