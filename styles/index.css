@@ -12,6 +12,7 @@
     --corContraste: #010b40;
     --preto: #000025;
     --brancoFraco: rgba(187, 187, 187, 0.097);
+    --cinzaHover: rgb(230, 230, 230);
     --cinzaContraste: rgb(91, 91, 91);
 }
 
@@ -104,19 +105,17 @@ header{
 .itens .login_e_carrinho{
     display: none;
     position: absolute;
-    top: 62px;
-}
-
-.itens .login_e_carrinho{
-    display: none;
     flex-direction: column;
     align-items: flex-start;
     width: 300px;
     border-radius: 4px;
-    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.173);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.173);
     padding: 20px;
     cursor: default;
     left: -90px;
+    top: 62px;
+    z-index: 2000;
+    background-color: white;
 }
 
 .itens:hover .login_e_carrinho{
@@ -223,7 +222,7 @@ header{
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: all .1s ease;
-    font-size: 1rem;
+    position: relative;
 }
 
 .secoes:hover{
@@ -237,6 +236,197 @@ header{
     transition: all .2s ease;
 }
 
-.secoes:hover img{
+.secoes:hover > img{
     transform: rotate(180deg);
 }
+
+.sublista{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    top: 50px;
+    list-style: none;
+    left: 0px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 100vw 0px 100vw rgba(0, 0, 0, 0.238);
+    z-index: 1000;
+}
+
+/* header bottom - marcas */
+.sublista.marcas{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    list-style: none;
+    min-width: 250px;
+}
+
+.marcas p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.marcas .item_lista p{
+    padding: 15px;
+}
+
+.marcas .item_lista:hover p{
+    background-color: var(--cinzaHover);
+    color: var(--corPrincipal);
+}
+
+.marcas .item_lista span{
+    transition: all .2s ease;
+    font-size: 1.1rem;
+}
+
+.marcas .item_lista:hover span{
+    transform: rotate(180deg);
+}
+
+.sublista li:hover .categorias_de_produtos{
+    display: block;
+}
+
+.secoes:hover .sublista{
+    display: flex;
+}
+
+.categorias_de_produtos{
+    position: absolute;
+    display: none;
+    list-style: none;
+    top: 0px;
+    right: -201px;
+    border-radius: 0px 0px 4px 0px;
+    background-color: var(--cinzaHover);
+    border-left: 1px solid;
+    min-width: 200px;
+}
+
+.categorias_de_produtos li{
+    padding: 15.9px 25px;
+}
+
+.categorias_de_produtos li:hover{
+    background-color: rgb(167, 167, 167);
+    font-weight: 500;
+}
+
+/* header bottom - celulares */
+.celulares{ 
+    flex-direction: row;
+    padding: 10px;
+}
+
+.nome_celulares{    
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.nome_celulares a{
+    padding: 15px;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.nome_celulares a:hover{
+    font-weight: 500;
+}
+
+.imagem_celulares, .imagem_celulares li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_celulares{
+    flex-wrap: wrap;
+    width: 470px;
+    list-style: none;
+    gap: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.141);
+}
+
+.imagem_celulares li{
+    background-color: var(--brancoFraco);
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    transition: all .2s ease;
+    position: relative;
+}
+
+.imagem_celulares li img{
+    width: 110px;
+}
+
+.imagem_celulares li:nth-child(1)::before, 
+.imagem_celulares li:nth-child(2)::before{
+    position: absolute;
+    content: "Novo!";
+    font-size: .8rem;
+    background-color: var(--corPrincipal);
+    color: white;
+    padding: 2px 10px;
+    top: -7px;
+    left: -10px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.184);
+    border-radius: 10px;
+}
+
+.imagem_celulares li:hover{
+    background-color: var(--cinzaHover);
+    transform: scale(1.05);
+}
+
+/* header bottom - monitores */
+.monitores{
+    min-width: 250px;
+}
+
+.monitores li{
+    padding: 15px;
+    transition: all .1s ease;
+}
+
+.monitores li:hover{
+    background-color: var(--cinzaHover);
+    color: var(--corPrincipal);
+}
+
+/* header bottom - informática */
+.informatica{
+    display: flex;
+    min-width: 250px;
+}
+
+.informatica > li{
+    padding: 15px;
+    position: relative;
+}
+
+.informatica > li:hover{
+    background-color: var(--cinzaHover);
+}
+
+.informatica > li p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informatica > li:hover p{
+    color: var(--corPrincipal);
+}
+
+.informatica > li p span{
+    font-size: 1.1rem;
+    transition: all .2s ease;
+}
+
+.informatica > li:hover span{
+    transform: rotate(180deg);
+}
+
