@@ -399,13 +399,11 @@ header{
 
 /* header bottom - informática */
 .informatica{
-    display: flex;
     min-width: 250px;
 }
 
 .informatica > li{
     padding: 15px;
-    position: relative;
 }
 
 .informatica > li:hover{
