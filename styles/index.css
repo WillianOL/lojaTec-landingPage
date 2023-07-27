@@ -206,3 +206,37 @@ header{
     color: white;
     background-color: #0d7bdb;
 }
+
+/* header bottom */
+.lista_de_produtos{
+    display: flex;
+    height: 50px;
+    list-style: none;
+    align-items: center;
+}
+
+.secoes{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    height: 100%;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all .1s ease;
+    font-size: 1rem;
+}
+
+.secoes:hover{
+    background-color: var(--brancoFraco);
+    border-color: var(--corPrincipal);
+}
+
+.secoes img{
+    margin-left: 5px;
+    width: 1.15rem;
+    transition: all .2s ease;
+}
+
+.secoes:hover img{
+    transform: rotate(180deg);
+}
