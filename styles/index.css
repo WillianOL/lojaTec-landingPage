@@ -8,9 +8,11 @@
 :root{
     --fontPrincipal: "Inter", Helvetica, sans-serif;
     --corPrincipal: #0d7bdb;
+    --hoverBotoes: #0c599d;
     --corContraste: #010b40;
-    --preto: #00000D;
+    --preto: #000025;
     --brancoFraco: rgba(187, 187, 187, 0.097);
+    --cinzaContraste: rgb(91, 91, 91);
 }
 
 /* header top */
@@ -77,6 +79,7 @@ header{
     cursor: pointer;
     padding: 0px 10px;
     border-bottom: 2px solid transparent;
+    position: relative;
 }
 
 .itens:hover{
@@ -98,7 +101,108 @@ header{
     transform: rotate(180deg);
 }
 
-.login_e_carrinho{
-    display: none !important;
+.itens .login_e_carrinho{
+    display: none;
+    position: absolute;
+    top: 62px;
 }
 
+.itens .login_e_carrinho{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.173);
+    padding: 20px;
+    cursor: default;
+    left: -90px;
+}
+
+.itens:hover .login_e_carrinho{
+    display: flex;
+}
+
+.itens:nth-child(1) .login_e_carrinho h1{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.itens:nth-child(1) .login_e_carrinho p{
+    font-size: 1rem;
+    color: var(--cinzaContraste);
+    margin-bottom: 10px;
+}
+
+.itens:nth-child(1) .login_e_carrinho span{
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--cinzaContraste);
+    padding: 0px 0px 7px 7px;
+    position: relative;
+}
+
+.itens:nth-child(1) .login_e_carrinho span:nth-child(5){
+    margin-bottom: 10px;
+}
+
+.itens:nth-child(1) .login_e_carrinho span::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--cinzaContraste);
+    border-radius: 50%;
+    left: -5px;
+    top: 5px;
+}
+
+.itens:nth-child(1) .login_e_carrinho a{
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--corPrincipal);
+    margin-bottom: 8px;
+    transition: all .2s ease;
+    border-radius: 2px;
+}
+
+.itens:nth-child(1) .login_e_carrinho a:hover{
+    background-color: var(--hoverBotoes);
+}
+
+.itens:nth-child(1) .login_e_carrinho .botao_secundario{
+    background-color: white;
+    color: var(--corPrincipal);
+    border: 1px solid var(--corPrincipal);
+}
+
+.itens:nth-child(1) .login_e_carrinho .botao_secundario:hover{
+    background-color: #8ac5f8;
+}
+
+.itens:nth-child(2) .login_e_carrinho{
+    gap: 100px;
+    left: -110px;
+}
+
+.itens:nth-child(2) .login_e_carrinho h1{
+    font-size: 1.4rem;
+}
+
+.itens:nth-child(2) .login_e_carrinho a{
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid var(--corPrincipal);
+    padding: 10px 5px 40px 5px;
+    font-size: 1.1rem;
+    color: var(--corPrincipal);
+    transition: all .1s ease;
+}
+
+.itens:nth-child(2) .login_e_carrinho a:hover{
+    color: white;
+    background-color: #0d7bdb;
+}
