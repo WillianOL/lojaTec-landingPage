@@ -1,2 +1,9 @@
-<?xml version="1.0" ?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#000000" width="800px" height="800px" viewBox="0 0 100 100" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path d="M80,27.13H61a2,2,0,0,0-2,2v2.94H20a2,2,0,0,0-2,2V64.65a2,2,0,0,0,2,2h9.41a8.13,8.13,0,0,0-1.18,4.23,2,2,0,0,0,2,2H50.79a2,2,0,0,0,2-2,8.13,8.13,0,0,0-1.18-4.23H59v4.23a2,2,0,0,0,2,2H80a2,2,0,0,0,2-2V29.13A2,2,0,0,0,80,27.13ZM32.73,68.88a4.23,4.23,0,0,1,3.72-2.23h8.12a4.23,4.23,0,0,1,3.72,2.23ZM59,62.65H22V36.07H59Zm19,6.23H63V31.13H78Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<g id="Layer_2" data-name="Layer 2">
+<g id="Layer_1-2" data-name="Layer 1">
+<path d="M11.5,11H.5a.5.5,0,0,0-.5.5v4a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,11.5,11ZM1,12H8v3H1Zm10,3H9V12h2ZM1.5,8h6V9h-2a.5.5,0,0,0,0,1h5a.5.5,0,0,0,0-1h-2V8h6a.5.5,0,0,0,.5-.5V.5a.5.5,0,0,0-.5-.5H1.5A.5.5,0,0,0,1,.5v7A.5.5,0,0,0,1.5,8ZM2,1H14V7H2ZM14.5,12A1.5,1.5,0,0,0,13,13.5v1a1.5,1.5,0,0,0,3,0v-1A1.5,1.5,0,0,0,14.5,12Zm.5,2.5a.5.5,0,0,1-1,0v-1a.5.5,0,0,1,1,0Z"/>
+</g>
+</g>
+</svg>
