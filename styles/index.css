@@ -225,6 +225,10 @@ header{
     position: relative;
 }
 
+.secoes > p{
+    font-size: .95rem;
+}
+
 .secoes:hover{
     background-color: var(--brancoFraco);
     border-color: var(--corPrincipal);
@@ -400,6 +404,7 @@ header{
 /* header bottom - informática */
 .informatica{
     min-width: 250px;
+    
 }
 
 .informatica > li{
@@ -543,7 +548,7 @@ header{
 }
 
 .cards_de_produtos{
-    padding: 40px 0px;
+    padding: 80px 0px;
 }
 
 .cards_de_produtos ul{
@@ -635,4 +640,67 @@ header{
 .card .preco .botoes_de_compra{
     font-size: .9rem;
     text-transform: uppercase;
+}
+
+/* vitrine dos protudos */
+.vitrine_de_produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 0px;
+}
+
+.vitrine_de_produtos .vitrine{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.vitrine .imagemProduto img{
+    width: 42vw;
+}
+.vitrine:nth-child(2) .imagemProduto img{
+    width: 35vw;
+}
+
+.vitrine .texto_e_botoes{
+    text-align: center;
+}
+
+.vitrine .texto_e_botoes h1{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: var(--cinzaContraste);
+}
+
+.vitrine .texto_e_botoes h2{
+    font-weight: 400;
+    color: var(--corPrincipal);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.vitrine .texto_e_botoes p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.texto_e_botoes .botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.texto_e_botoes .botoes .botoes_de_compra{
+    font-size: 1.1rem;
+    padding: 10px 30px;
+}
+
+.vitrine:nth-child(2){
+    flex-direction: row-reverse;
 }
