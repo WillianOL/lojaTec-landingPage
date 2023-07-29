@@ -10,7 +10,7 @@
     --corPrincipal: #0d7bdb;
     --hoverBotoes: #0c599d;
     --corContraste: #010b40;
-    --preto: #000025;
+    --preto: #121214;
     --brancoFraco: rgba(187, 187, 187, 0.097);
     --cinzaHover: rgb(230, 230, 230);
     --cinzaContraste: rgb(91, 91, 91);
@@ -532,4 +532,107 @@ header{
 .banner_imagem img{
     width: max(1rem, 23vw);
     transform: rotate(10deg);
+}
+
+/* Cards dos produtos recomendados */
+.cards_de_produtos,
+.cards_de_produtos ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_de_produtos{
+    padding: 40px 0px;
+}
+
+.cards_de_produtos ul{
+    gap: 25px;
+    list-style: none;
+}
+
+.cards_de_produtos .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: max(200px, 250px);
+    height: 500px;
+    padding: 25px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.111);
+    background-color: var(--brancoFraco);
+}
+
+.cards_de_produtos .card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img{
+    width: max(5rem, 9vw);
+    margin-bottom: 20px;
+}
+
+.card:nth-child(3) div:nth-child(1) img{
+    margin-bottom: 27px;
+}
+
+.card div:nth-child(1) h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card div:nth-child(1) p{
+    font-size: .8rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.card div:nth-child(1) p::before{
+    position: absolute;
+    content: "";
+    background-color: var(--preto);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all .3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.card div:nth-child(1) p:hover::before{
+    transform: scale(1.1) translate(-50%, -1px);
+    border-color: white;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.352);
+}
+
+.card:nth-child(3) div:nth-child(1) p::before{
+    background-color: rgb(124, 192, 251);
+}
+
+.card div:nth-child(1) p span{
+    font-weight: 600;
+}
+
+.card .preco p{
+    color: var(--corPrincipal);
+    font-size: .7rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card .preco h2{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card .preco .botoes_de_compra{
+    font-size: .9rem;
+    text-transform: uppercase;
 }
