@@ -28,6 +28,10 @@ header{
     height: 60px;
 }
 
+.btnMobile{
+    display: none;
+}
+
 .logo{
     font-size: 1rem;
     font-weight: 600;
@@ -480,7 +484,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 80px;
-    padding: 40px 0px;
+    padding: 30px 20px;
     flex-wrap: wrap;
 }
 
@@ -545,10 +549,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cards_de_produtos{
-    padding: 80px 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
 }
 
 .cards_de_produtos ul{
@@ -560,7 +567,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: max(200px, 250px);
+    min-width: 250px;
     height: 500px;
     padding: 25px 10px;
     border-radius: 10px;
@@ -576,7 +583,7 @@ header{
 }
 
 .card img{
-    width: max(5rem, 9vw);
+    width: 8rem;
     margin-bottom: 20px;
 }
 
@@ -649,7 +656,8 @@ header{
     justify-content: center;
     align-items: center;
     gap: 80px;
-    padding: 80px 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .vitrine_de_produtos .vitrine{
@@ -667,7 +675,8 @@ header{
 }
 
 .vitrine .texto_e_botoes{
-    text-align: center;
+    text-align: center; 
+    max-width: 500px;
 }
 
 .vitrine .texto_e_botoes h1{
@@ -679,7 +688,6 @@ header{
 }
 
 .vitrine .texto_e_botoes h2{
-    font-weight: 400;
     color: var(--corPrincipal);
     font-size: 1.8rem;
     margin-bottom: 10px;
@@ -703,4 +711,253 @@ header{
 
 .vitrine:nth-child(2){
     flex-direction: row-reverse;
+}
+
+/* Produto destaque - monitor */
+.produto_destaque{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(120deg, rgb(53, 53, 53) ,rgb(22, 22, 22));
+}
+
+.produto_destaque .texto_produto{
+    color: var(--cinzaHover);
+    text-align: center;
+    max-width: 500px;
+}
+
+.texto_produto h1{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.texto_produto h2{
+    color: var(--corPrincipal);
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+.texto_produto p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.texto_produto .botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.texto_produto .botoes .botoes_de_compra{
+    font-size: 1.1rem;
+}
+
+.texto_produto .botoes .botoes_de_compra:nth-child(2){
+    background-color: transparent;
+}
+
+.texto_produto .botoes .botoes_de_compra:nth-child(2):hover{
+    background-color: #8ac5f8;
+}
+
+.imagem_produto img{
+    width: 32vw;
+}
+
+/* Responsivo */
+@media (max-width: 1020px){
+    .banner_conteiner{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 900px){
+    /* header */
+    header.header{
+        padding: 0px 20px;
+        position: relative;
+    }
+
+    /* header bottom */
+    .header_bottom{
+        padding: 10px 0px;
+        z-index: 1000;
+        position: relative;
+    }
+
+    .lista_de_produtos{
+        flex-wrap: wrap;
+        background-color: white;
+        justify-content: center;
+    }
+
+    /* Menu mobile */
+    .btnMobile{
+        display: block;
+    }
+
+    .btnMobile span{
+        font-size: 2.2rem;
+        font-weight: 300;
+        padding: 10px;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+
+    .btnMobile span:hover{
+        color: var(--corPrincipal);
+    }
+
+    .botoes_de_acesso ul{
+        display: none;
+    }
+    /* carrosel de icones */
+    .carrosel_de_icones{
+        overflow-x: scroll;
+        position: relative;
+        justify-content: left;
+        padding-top: 10px;
+    }
+
+    .carrosel_de_icones::before{
+        position: absolute;
+        content: "→";
+        font-size: 2rem;
+        color: var(--corPrincipal);
+        top: -10px;
+        right: 50px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.388);
+        animation: animaSetaIcones .7s ease infinite alternate-reverse;
+    }
+
+    @keyframes animaSetaIcones {
+        to{transform: translateX(-8px);}
+    }
+
+    .cards_de_produtos ul{
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        justify-content: left;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: inset -10px 0px 5px rgba(0, 0, 0, 0.197)
+    }
+
+    .cards_de_produtos::before{
+        position: absolute;
+        content: "→";
+        font-weight: 600;
+        font-size: 2.2rem;
+        color: var(--corPrincipal);
+        top: 40px;
+        right: 50px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.388);
+        animation: animaSetaIcones .7s ease infinite alternate-reverse;
+    }
+
+    /* banner site */
+    .banner_imagem img{
+        width: 42vw;
+    }
+
+    .texto_do_banner h1{
+        font-size: 2.2rem;
+    }
+
+    .texto_do_banner .botoes{
+        display: flex;
+        justify-content: center;
+    }
+
+    .texto_do_banner .botoes a{
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* destaque site */
+    .produto_destaque{
+        flex-wrap: wrap-reverse;
+    }
+
+    .produto_destaque .imagem_produto img{
+        width: 60vw;
+        margin-bottom: 20px;
+    }
+    
+    /* Vitrine dos produtos */
+    .vitrine{
+        flex-wrap: wrap;
+    }
+
+    .vitrine .imagemProduto img{
+        width: 62vw;
+        margin-bottom: 20px;
+    }
+
+    /* Sublistas */
+    .marcas{
+        min-width: 170px !important;
+    }
+
+    .celulares{
+        left: -120%;
+        width: 90vw;
+        height: 350px;
+    }
+
+    .imagem_celulares{
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        align-items: normal;
+        padding: 10px 0px;
+    }
+
+    .monitores{
+        left: -150%;
+    }
+
+    .informatica{
+        min-width: 170px !important;
+        left: -240%;
+    }
+}
+
+@media (max-width: 380px){
+    .lista_de_produtos{
+        background-color: white;
+        height: 120px;
+    }
+
+    .secoes{
+        height: 50px;
+    }
+
+    .marcas{
+        left: -75% !important;
+    }
+
+    .celulares{
+        left: -155%;
+        height: 400px;
+        width: 98vw;
+    }
+
+    .nome_celulares{
+        min-width: 150px !important;
+    }
+
+    .monitores{
+        left: -20%;
+    }
+
+    .informatica{
+        left: -130%;
+    }
 }
