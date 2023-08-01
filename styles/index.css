@@ -907,8 +907,9 @@ header{
     }
 
     .celulares{
-        left: -120%;
-        width: 90vw;
+        left: -50%;
+        transform: translate(-20%, 0);
+        width: 85vw;
         height: 350px;
     }
 
@@ -929,7 +930,7 @@ header{
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 420px){
     .lista_de_produtos{
         background-color: white;
         height: 120px;
@@ -943,10 +944,26 @@ header{
         left: -75% !important;
     }
 
+    .marcas .item_lista .categorias_de_produtos li{
+        padding: 15px 2px;
+    }
+
+    .marcas .item_lista .categorias_de_produtos{
+        min-width: 150px;
+        right: -150.1px;
+    }
+
     .celulares{
-        left: -155%;
-        height: 400px;
+        padding-top: 20px;
+        left: -90% !important;
+        height: 350px;
+        overflow-x: scroll;
         width: 98vw;
+        flex-direction: column;
+    }
+
+    .celulares .nome_celulares{
+        display: none;
     }
 
     .nome_celulares{
@@ -959,5 +976,10 @@ header{
 
     .informatica{
         left: -130%;
+    }
+
+    .informatica .categorias_de_produtos {
+        min-width: 150px;
+        right: -150px;
     }
 }
