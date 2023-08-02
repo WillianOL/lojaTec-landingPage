@@ -32,6 +32,10 @@ header{
     display: none;
 }
 
+.barraMobile{
+    display: none;
+}
+
 .logo{
     font-size: 1rem;
     font-weight: 600;
@@ -784,6 +788,20 @@ header{
         position: relative;
     }
 
+    .barra_de_pesquisa{
+        display: none;
+    }
+
+    .barraMobile{
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .barraMobile .barra_de_pesquisa{
+        display: flex;
+        width: 100%;
+    }
+
     /* header bottom */
     .header_bottom{
         padding: 10px 0px;
@@ -930,7 +948,7 @@ header{
     }
 }
 
-@media (max-width: 420px){
+@media (max-width: 500px){
     .lista_de_produtos{
         background-color: white;
         height: 120px;
