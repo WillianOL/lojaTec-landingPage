@@ -822,7 +822,7 @@ header{
         overflow-x: scroll;
         position: relative;
         justify-content: left;
-        padding-top: 10px;
+        padding: 0px 10px;
     }
 
     .carrosel_de_icones::before{
@@ -854,7 +854,7 @@ header{
         position: absolute;
         content: "→";
         font-weight: 600;
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: var(--corPrincipal);
         top: 40px;
         right: 50px;
@@ -938,10 +938,11 @@ header{
 
     .secoes{
         height: 50px;
+        padding: 0px 20px;
     }
 
     .marcas{
-        left: -75% !important;
+        left: -45% !important;
     }
 
     .marcas .item_lista .categorias_de_produtos li{
@@ -955,10 +956,10 @@ header{
 
     .celulares{
         padding-top: 20px;
-        left: -90% !important;
+        left: -80% !important;
         height: 350px;
         overflow-x: scroll;
-        width: 98vw;
+        width: 80vw;
         flex-direction: column;
     }
 
