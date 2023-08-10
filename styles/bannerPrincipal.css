@@ -1,0 +1,63 @@
+.banner_conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.texto_do_banner{
+    max-width: 650px;
+}
+
+.texto_do_banner h1{
+    font-size: max(2rem, 2.8rem);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.texto_do_banner span{
+    color: var(--corPrincipal);
+}
+
+
+.texto_do_banner p{
+    font-size: max(1.14rem, 1.4vw);   
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.botoes{
+    display: flex;
+    gap: 20px;
+}
+
+.botoes_de_compra{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    background-color: var(--corPrincipal);
+    color: white;
+    border-radius: 2px;
+    transition: all .2s ease;
+}
+
+.botoes_de_compra:hover{
+    background-color: var(--hoverBotoes);
+}
+
+.botoes_de_compra:nth-child(2){
+    background-color: white;
+    color: var(--corPrincipal);
+    border: 1px solid var(--corPrincipal);
+}
+
+.botoes_de_compra:nth-child(2):hover{
+    background-color: #8ac5f8;
+}
+
+.banner_imagem img{
+    width: max(1rem, 23vw);
+    transform: rotate(10deg);
+}

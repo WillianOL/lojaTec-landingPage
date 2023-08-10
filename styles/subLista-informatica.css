@@ -1,0 +1,29 @@
+.informatica{
+    min-width: 250px;   
+}
+
+.informatica > li{
+    padding: 15px;
+}
+
+.informatica > li:hover{
+    background-color: var(--cinzaHover);
+}
+
+.informatica > li p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informatica > li:hover p{
+    color: var(--corPrincipal);
+}
+
+.informatica > li p span{
+    font-size: 1.1rem;
+    transition: all .2s ease;
+}
+
+.informatica > li:hover span{
+    transform: rotate(180deg);
+}

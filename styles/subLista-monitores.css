@@ -1,0 +1,13 @@
+.monitores{
+    min-width: 250px;
+}
+
+.monitores li{
+    padding: 15px;
+    transition: all .1s ease;
+}
+
+.monitores li:hover{
+    background-color: var(--cinzaHover);
+    color: var(--corPrincipal);
+}

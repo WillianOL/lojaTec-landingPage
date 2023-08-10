@@ -1,0 +1,55 @@
+.sublista.marcas{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    list-style: none;
+    min-width: 250px;
+}
+
+.marcas p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.marcas .item_lista p{
+    padding: 15px;
+}
+
+.marcas .item_lista:hover p{
+    background-color: var(--cinzaHover);
+    color: var(--corPrincipal);
+}
+
+.marcas .item_lista span{
+    transition: all .2s ease;
+    font-size: 1.1rem;
+}
+
+.marcas .item_lista:hover span{
+    transform: rotate(180deg);
+}
+
+.sublista li:hover .categorias_de_produtos{
+    display: block;
+}
+
+.categorias_de_produtos{
+    position: absolute;
+    display: none;
+    list-style: none;
+    top: 0px;
+    right: -201px;
+    border-radius: 0px 0px 4px 0px;
+    background-color: var(--cinzaHover);
+    border-left: 1px solid;
+    min-width: 200px;
+}
+
+.categorias_de_produtos li{
+    padding: 15.9px 25px;
+}
+
+.categorias_de_produtos li:hover{
+    background-color: rgb(167, 167, 167);
+    font-weight: 500;
+}

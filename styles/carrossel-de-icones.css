@@ -1,0 +1,39 @@
+.flex_conteiner{
+    padding: 0px 40px;
+}
+
+.carrosel_de_icones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brancoFraco);
+    border-top: 1px solid var(--cinzaHover);
+    border-bottom: 1px solid var(--cinzaHover);
+}
+
+.carrosel{
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+}
+
+.carrosel li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    height: 120px;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.carrosel img{
+    width: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.carrosel li:hover{
+    color: var(--corPrincipal);
+    background-color: var(--cinzaHover);
+}

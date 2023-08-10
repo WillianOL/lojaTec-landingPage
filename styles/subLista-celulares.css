@@ -1,0 +1,66 @@
+.celulares{ 
+    flex-direction: row;
+    padding: 10px;
+}
+
+.nome_celulares{    
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.nome_celulares a{
+    padding: 15px;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.nome_celulares a:hover{
+    font-weight: 500;
+}
+
+.imagem_celulares, .imagem_celulares li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_celulares{
+    flex-wrap: wrap;
+    width: 470px;
+    list-style: none;
+    gap: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.141);
+}
+
+.imagem_celulares li{
+    background-color: var(--brancoFraco);
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    transition: all .2s ease;
+    position: relative;
+}
+
+.imagem_celulares li img{
+    width: 110px;
+}
+
+.imagem_celulares li:nth-child(1)::before, 
+.imagem_celulares li:nth-child(2)::before{
+    position: absolute;
+    content: "Novo!";
+    font-size: .8rem;
+    background-color: var(--corPrincipal);
+    color: white;
+    padding: 2px 10px;
+    top: -7px;
+    left: -10px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.184);
+    border-radius: 10px;
+}
+
+.imagem_celulares li:hover{
+    background-color: var(--cinzaHover);
+    transform: scale(1.05);
+}
