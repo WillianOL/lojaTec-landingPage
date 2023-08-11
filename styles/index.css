@@ -10,6 +10,7 @@
 @import url("../styles/card-de-produtos.css");
 @import url("../styles/vitrine-dos-produtos.css");
 @import url("../styles/produto-destaque.css");
+@import url("../styles/footer.css");
 
 *{
     margin: 0px;
