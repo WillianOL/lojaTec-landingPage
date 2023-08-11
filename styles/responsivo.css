@@ -1,0 +1,298 @@
+@media (max-width: 1020px){
+    .banner_conteiner{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 900px){
+    header.header{
+        padding: 0px 20px;
+        position: relative;
+    }
+
+    .barra_de_pesquisa{
+        display: none;
+    }
+
+    .barraMobile{
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .barraMobile .barra_de_pesquisa{
+        display: flex;
+        width: 100%;
+    }
+
+    /* header bottom */
+    .header_bottom{
+        padding: 10px 0px;
+        z-index: 1000;
+        position: relative;
+    }
+
+    .lista_de_produtos{
+        flex-wrap: wrap;
+        background-color: white;
+        justify-content: center;
+    }
+
+    /* Menu mobile */
+    .btnMobile{
+        display: block;
+        position: relative;
+        z-index: 2200; 
+    }
+
+    .btnMobile span{
+        font-size: 2.2rem;
+        font-weight: 300;
+        padding: 10px;
+        cursor: pointer;
+        transition: all .3s ease;
+        z-index: 2200;
+    }
+
+    .btnMobile span:hover{
+        color: var(--corPrincipal);
+    }
+
+    .btnMobile span.ativo{
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.285);
+    }
+
+    .botoes_de_acesso ul{
+        display: none;
+        flex-direction: column;
+    }
+
+    .botoes_de_acesso ul.ativo{
+        display: flex;
+        position: absolute;
+        z-index: 2000;
+        left: -20px;
+        padding: 20px 0px;
+        height: 100vh;
+        width: 0px;
+        gap: 10px;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 0px 100vw 0px 100vw rgba(0, 0, 0, 0.238);
+        top: 0px;
+        flex-direction: column;
+        background-color: white;
+        overflow-x: hidden;
+        animation: aparecerMenu .5s ease forwards;
+    }
+
+    @keyframes aparecerMenu {to{width: 300px;}}
+
+    .botoes_de_acesso ul.ativo .itens{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        border: none;
+        padding: 10px 0px;
+        overflow-y: hidden;
+    }
+
+    .botoes_de_acesso ul.ativo .login_e_carrinho{
+        width: 100%;
+        height: 0px;
+        top: 0px;
+        margin-top: 20px;
+        animation: aparecerSubMenu .5s ease forwards;
+    }
+
+    @keyframes aparecerSubMenu {to{height: 300px;}}
+
+    .botoes_de_acesso ul.ativo li > p{
+        font-size: 1.2rem;
+    }
+
+    .botoes_de_acesso ul.ativo li > span{
+        font-size: 1.9rem;
+    }
+
+    .botoes_de_acesso ul.ativo .login_e_carrinho{
+        left: 0px;
+        position: relative;
+    }
+    /* carrosel de icones */
+    .carrosel_de_icones{
+        overflow-x: scroll;
+        position: relative;
+        justify-content: left;
+        padding: 0px 10px;
+    }
+
+    .carrosel_de_icones::before{
+        position: absolute;
+        content: "→";
+        font-size: 2rem;
+        color: var(--corPrincipal);
+        top: -10px;
+        right: 50px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.388);
+        animation: animaSetaIcones .7s ease infinite alternate-reverse;
+    }
+
+    @keyframes animaSetaIcones {
+        to{transform: translateX(-8px);}
+    }
+
+    .cards_de_produtos ul{
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        justify-content: left;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: inset -10px 0px 5px rgba(0, 0, 0, 0.197)
+    }
+
+    .cards_de_produtos::before{
+        position: absolute;
+        content: "→";
+        font-weight: 600;
+        font-size: 2rem;
+        color: var(--corPrincipal);
+        top: 40px;
+        right: 50px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.388);
+        animation: animaSetaIcones .7s ease infinite alternate-reverse;
+    }
+
+    /* banner site */
+    .banner_imagem img{
+        width: 42vw;
+    }
+
+    .texto_do_banner h1{
+        font-size: 2.2rem;
+    }
+
+    .texto_do_banner .botoes{
+        display: flex;
+        justify-content: center;
+    }
+
+    .texto_do_banner .botoes a{
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* destaque site */
+    .produto_destaque{
+        flex-wrap: wrap-reverse;
+    }
+
+    .produto_destaque .imagem_produto img{
+        width: 60vw;
+        margin-bottom: 20px;
+    }
+    
+    /* Vitrine dos produtos */
+    .vitrine{
+        flex-wrap: wrap;
+    }
+
+    .vitrine .imagemProduto img{
+        width: 62vw;
+        margin-bottom: 20px;
+    }
+
+    /* Sublistas */
+    .marcas{
+        min-width: 170px !important;
+    }
+
+    .celulares{
+        left: -50%;
+        transform: translate(-20%, 0);
+        width: 85vw;
+        height: 350px;
+    }
+
+    .imagem_celulares{
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        align-items: normal;
+        padding: 10px 0px;
+    }
+
+    .monitores{
+        left: -150%;
+    }
+
+    .informatica{
+        min-width: 170px !important;
+        left: -240%;
+    }
+}
+
+@media (max-width: 500px){
+    .lista_de_produtos{
+        background-color: white;
+        height: 120px;
+    }
+
+    .secoes{
+        height: 50px;
+        padding: 0px 20px;
+    }
+
+    .marcas{
+        left: -45% !important;
+    }
+
+    .marcas .item_lista .categorias_de_produtos li{
+        padding: 15px 2px;
+    }
+
+    .marcas .item_lista .categorias_de_produtos{
+        min-width: 150px;
+        right: -150.1px;
+    }
+
+    .celulares{
+        padding-top: 20px;
+        left: -80% !important;
+        height: 350px;
+        overflow-x: scroll;
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .celulares .nome_celulares{
+        display: none;
+    }
+
+    .nome_celulares{
+        min-width: 150px !important;
+    }
+
+    .monitores{
+        left: -20%;
+    }
+
+    .informatica{
+        left: -130%;
+    }
+
+    .informatica .categorias_de_produtos {
+        min-width: 150px;
+        right: -150px;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .vitrine .texto_e_botoes .botoes .botoes_de_compra,
+    .texto_produto .botoes .botoes_de_compra{
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
