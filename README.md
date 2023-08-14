@@ -51,7 +51,7 @@
 	<p>Para fazer o menu mobile para aparelhos menores, foi feito de forma bem simples. Primeiro, o botão foi colocado diretamente no HTML. No CSS, em telas maiores o botão é definido como "display: none" para não aparecer em tela, quando a largura da tela alcança 900px, ele é definido como "display: block".</p>
 </div>
 
-#### <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> HTML & CSS
+#### <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> HTML & CSS do botão
 <div align="center">
 	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/9a214d43-f5e3-4d58-9e51-6449928c43ca" width="700px">
 	<br>
@@ -73,6 +73,44 @@
 <div align="center">
 	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/c3a694a3-4567-4798-abd6-24b4c7f8e078" width="700px">
 </div>
+
+&nbsp;
+
+### Abrir e fechar menu
+
+<div>
+	<p>Para criar a funcionalidade de abrir e fechar o menu, fiz de forma bem simples. No botão para abrir o menu, que é a variável <strong>botaoMobile</strong>, foi definido um evento de click usando o "addEventListener()" que chamará a função <strong>abrirEFecharMenu()</strong></p>
+</div>
+
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/77751c4e-95f6-49f6-8779-937e6035ef99" width="700px">
+</div>
+
+&nbsp;
+
+<div>
+	<p>Com o clique, a função e ativada. A função é responsável por adicionar ou remover a classe “ativo” do elemento HTML que contém os botões de acesso do menu mobile e do botão mobile. Essa classe é responsável por mostrar ou esconder o menu mobile. Fazendo assim, quando o clique for dado no botão o menu abra, quando outro clique for dado o menu vai fechar.</p>
+</div>
+
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/425a9488-cadf-47c7-9531-fbaff9f6c417" width="700px">
+</div>
+
+&nbsp;
+
+<div>
+	<p>A classe ativo no botão mobile </p>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
