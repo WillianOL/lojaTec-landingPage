@@ -89,7 +89,7 @@
 &nbsp;
 
 <div>
-	<p>Com o clique, a função e ativada. A função é responsável por adicionar ou remover a classe “ativo” do elemento HTML que contém os botões de acesso do menu mobile e do botão mobile. Essa classe é responsável por mostrar ou esconder o menu mobile. Fazendo assim, quando o clique for dado no botão o menu abra, quando outro clique for dado o menu vai fechar.</p>
+	<p>Com o clique, a função e ativada. A função é responsável por adicionar ou remover a classe “ativo” do elemento HTML que contém os botões de acesso do menu mobile e do botão mobile. Essa classe é responsável por mostrar ou esconder o menu mobile. Fazendo assim, quando o clique for dado no botão o menu apareça, quando outro clique for dado o menu vai fechar.</p>
 </div>
 
 <div align="center">
@@ -99,10 +99,13 @@
 &nbsp;
 
 <div>
-	<p>A classe ativo no botão mobile </p>
+	<p>A classe ativo no botão mobile foi colcada para fazer a alteração do texto no botão. Isso porque o botão é da biblioteca do google icons, e alterando o conteúdo do botão é possivel mudar sua aparência.</p>
+	<p>Para fazer essa alteração, na função "abrirEFecharMenu" utilizei a estrutura condicional IF. Fazendo da sequinte forma: Quando se botaoMobile tiver a classe ativo, troque seu conteúdo por "close", se ela não tiver a classe ativo, troque por "menu". Fazendo a alteração do icone do menu mobile.</p>
 </div>
 
-
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/79d2e0da-1ad6-4011-b79c-7956805a9e93" width="700px">
+</div>
 
 
 
