@@ -53,10 +53,10 @@
 
 #### <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> HTML & CSS do botão
 <div align="center">
-	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/9a214d43-f5e3-4d58-9e51-6449928c43ca" width="700px">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/9a214d43-f5e3-4d58-9e51-6449928c43ca" width="650px">
 	<br>
 	<br>
-	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/6e54c2aa-7e08-4b1d-8a96-454a8d48c1ac" width="700px">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/6e54c2aa-7e08-4b1d-8a96-454a8d48c1ac" width="650px">
 </div>
 
 &nbsp;
@@ -71,7 +71,7 @@
 </div>
 
 <div align="center">
-	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/c3a694a3-4567-4798-abd6-24b4c7f8e078" width="700px">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/c3a694a3-4567-4798-abd6-24b4c7f8e078" width="650px">
 </div>
 
 &nbsp;
@@ -83,7 +83,7 @@
 </div>
 
 <div align="center">
-	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/77751c4e-95f6-49f6-8779-937e6035ef99" width="700px">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/77751c4e-95f6-49f6-8779-937e6035ef99" width="650px">
 </div>
 
 &nbsp;
@@ -93,7 +93,7 @@
 </div>
 
 <div align="center">
-	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/425a9488-cadf-47c7-9531-fbaff9f6c417" width="700px">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/425a9488-cadf-47c7-9531-fbaff9f6c417" width="650px">
 </div>
 
 &nbsp;
@@ -104,7 +104,10 @@
 </div>
 
 <div align="center">
-	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/79d2e0da-1ad6-4011-b79c-7956805a9e93" width="700px">
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/79d2e0da-1ad6-4011-b79c-7956805a9e93" width="650px">
+	<br>
+	<br>
+	<img align="center" src="https://github.com/WillianOL/lojaTec-landingPage/assets/112639055/f0e06b96-15ba-4745-8831-52e9443e471d" width="650px">
 </div>
 
 
