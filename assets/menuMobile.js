@@ -12,4 +12,4 @@ function abrirEFecharMenu() {
     }
 }
 
-botaoMobile.addEventListener("click", abrirEFecharMenu)
+botaoMobile.addEventListener("click", abrirEFecharMenu);

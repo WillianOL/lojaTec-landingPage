@@ -8,83 +8,11 @@
     /* Menu mobile */
     .btnMobile{
         display: block;
-        position: relative;
-        z-index: 2200; 
-    }
-
-    .btnMobile span{
-        font-size: 2.2rem;
-        font-weight: 300;
-        padding: 10px;
-        cursor: pointer;
-        transition: all .3s ease;
-        z-index: 2200;
-    }
-
-    .btnMobile span:hover{
-        color: var(--corPrincipal);
-    }
-
-    .btnMobile span.ativo{
-        color: white;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.285);
     }
 
     .botoes_de_acesso ul{
         display: none;
         flex-direction: column;
-    }
-
-    .botoes_de_acesso ul.ativo{
-        display: flex;
-        position: absolute;
-        z-index: 2000;
-        left: -20px;
-        padding: 20px 0px;
-        height: 100vh;
-        width: 0px;
-        gap: 10px;
-        border-radius: 0px 20px 20px 0px;
-        box-shadow: 0px 100vw 0px 100vw rgba(0, 0, 0, 0.238);
-        top: 0px;
-        flex-direction: column;
-        background-color: white;
-        overflow-x: hidden;
-        animation: aparecerMenu .5s ease forwards;
-    }
-
-    @keyframes aparecerMenu {to{width: 300px;}}
-
-    .botoes_de_acesso ul.ativo .itens{
-        width: 100%;
-        flex-direction: column;
-        height: auto;
-        border: none;
-        padding: 10px 0px;
-        overflow-y: hidden;
-    }
-
-    .botoes_de_acesso ul.ativo .login_e_carrinho{
-        width: 100%;
-        height: 0px;
-        top: 0px;
-        margin-top: 20px;
-        animation: aparecerSubMenu .5s ease forwards;
-    }
-
-    @keyframes aparecerSubMenu {to{height: 300px;}}
-
-    .botoes_de_acesso ul.ativo li > p{
-        font-size: 1.2rem;
-    }
-
-    .botoes_de_acesso ul.ativo li > span{
-        font-size: 1.9rem;
-    }
-
-    .botoes_de_acesso ul.ativo .login_e_carrinho{
-        left: 0px;
-        position: relative;
     }
 
     /* header top */
